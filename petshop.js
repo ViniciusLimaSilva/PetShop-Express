@@ -1,9 +1,9 @@
 const moment = require('moment');
 const fs = require('fs');
 
-let dadosPets = fs.readFileSync('./dadospet.json');
+let dadospet = fs.readFileSync('./dadospet.json');
 
-let dadosPets = JSON.parse(dadosPets);
+dadospet = JSON.parse(dadospet);
 
 const petshop = {
   attbancopets: () => {
@@ -13,21 +13,20 @@ const petshop = {
   },
 
   listarPets: () => {
+    let textoListaPets = 'PETSHOP \n';
     dadospet.pets.forEach((pet) => {
       //desestruturação
 
       let { nome, idade, tipo, raca } = pet;
 
-      console.log(`${nome}, ${idade} anos, ${tipo}, ${raca}`);
+      textoListaPets += `${nome}, ${idade} anos, ${tipo}, ${raca} \n`;
 
-      pet.servicos.forEach((servico) => {
-        let { nome = nomeServico, data } = servico;
-        console.log(`${nome} - ${data}`);
-      });
-
-      let vacinado = pet.vacinado == true ? 'Vacinado' : 'Não vacinado'; //if ternario para verificar se o pet é vacinado
-      console.log(vacinado + '\n');
+      //pet.servicos.forEach((servico) => {
+      //  let { nome = nomeServico, data } = servico;
+      //  textoListaPets += `${nome} - ${data} \n`;
+      // });
     });
+    return textoListaPets;
   },
 
   VerificaVacinaPet: (animal) => {
@@ -68,7 +67,7 @@ const petshop = {
       dadospet.pets.push(novopet);
     });
 
-    attbancopets();
+    petshop.attbancopets();
     novospets.forEach((pet) => {
       console.log(`${pet.nome} foi adicionado com sucesso!`);
     });
@@ -112,12 +111,13 @@ const petshop = {
     let petencontrado = dadospet.pets.find((pet) => {
       return pet.nome == nomepet;
     });
+    return petencontrado;
 
-    console.log(
-      petencontrado
-        ? petencontrado
-        : `nenhum pet encontrado com o nome${pet.nome}`
-    );
+    // console.log(
+    //    petencontrado
+    //      ? petencontrado
+    //     : `nenhum pet encontrado com o nome${pet.nome}`
+    // );
   },
 
   filtrarTipoPet: (tipoPet) => {
@@ -158,4 +158,4 @@ const petshop = {
   },
 };
 
-modules.exports = petshop;
+module.exports = petshop;
