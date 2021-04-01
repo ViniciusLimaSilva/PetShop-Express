@@ -1,0 +1,96 @@
+{
+  "pets": [
+    {
+      "nome": "Joey",
+      "tipo": "coelho",
+      "idade": 3,
+      "raca": "chinchila",
+      "peso": 5,
+      "tutor": "vinicius",
+      "contato": "(81)98529-1481",
+      "vacinado": true,
+      "servicos": [
+        { "nome": "tosa", "data": "30-03-2021" },
+        { "nome": "tosa", "data": "30-03-2021" },
+        { "nome": "tosa", "data": "30-03-2021" },
+        { "nome": "tosa", "data": "30-03-2021" },
+        { "nome": "tosa", "data": "30-03-2021" },
+        { "nome": "tosa", "data": "30-03-2021" }
+      ]
+    },
+    {
+      "nome": "bolota",
+      "tipo": "coelho",
+      "idade": 1,
+      "raca": "mesclado",
+      "peso": 2,
+      "tutor": "conceição",
+      "contato": "(81)98624-8759",
+      "vacinado": true,
+      "servicos": [
+        { "nome": "banho", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" },
+        { "nome": "corte de unhas", "data": "30-03-2021" }
+      ]
+    },
+    {
+      "nome": "joeyJr",
+      "tipo": "coelho",
+      "idade": 1,
+      "raca": "Raraça Pura",
+      "peso": 2,
+      "tutor": "Pierre",
+      "contato": "(81)99999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "pingu",
+      "tipo": "cachorro",
+      "idade": 5,
+      "raca": "viralata",
+      "peso": 10,
+      "tutor": "rafael",
+      "contato": "(81) 98871-9823",
+      "vacinado": true,
+      "servicos": [{ "nome": "tosa", "data": "30-03-2021" }]
+    },
+    {
+      "nome": "gadão",
+      "tipo": "boi",
+      "idade": 3,
+      "raca": "American",
+      "peso": 90,
+      "tutor": "Doug",
+      "contato": "(11) 999399-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "gadinho",
+      "tipo": "cabra",
+      "idade": 10,
+      "raca": "American",
+      "peso": 43,
+      "tutor": "Doug",
+      "contato": "(11) 992999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "gado",
+      "tipo": "boi",
+      "idade": 8,
+      "raca": "american",
+      "peso": 70,
+      "tutor": "marcos",
+      "contato": "(11) 9999129-9999",
+      "vacinado": false,
+      "servicos": []
+    }
+  ]
+}
